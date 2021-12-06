@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
-[assembly: AssemblyTitle("AoE4BO")]
-[assembly: AssemblyDescription("Overlay for Age of Empires 4 to lern build orders")]
+[assembly: AssemblyTitle("帝国4建造顺序")]
+[assembly: AssemblyDescription("学习帝国时代4建造顺序的覆盖层")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("m.maart@gmx.de")]
-[assembly: AssemblyProduct("AoE4BO.Properties")]
+[assembly: AssemblyCompany("易易工作室（汉化）")]
+[assembly: AssemblyProduct("帝国4建造顺序")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,4 +32,4 @@ using System.Runtime.InteropServices;
 //
 [assembly: AssemblyVersion("0.9.7.0")]
 [assembly: AssemblyFileVersion("0.9.7.0")]
-[assembly: NeutralResourcesLanguage("en")]
+[assembly: NeutralResourcesLanguage("zh")]

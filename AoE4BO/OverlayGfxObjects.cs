@@ -441,7 +441,7 @@ namespace AoE4BO
 
         public override void Draw()
         {
-            string text = (Parent as GfxBuildOrder).Hide ? "Show" : "Hide";
+            string text = (Parent as GfxBuildOrder).Hide ? "显示" : "隐藏";
             int x = (int)Parent.X + (int)X;
             int y = (int)Parent.Y + (int)Y;
 
@@ -504,7 +504,7 @@ namespace AoE4BO
             int height = (int)Height;
 
             Renderer.DrawLine(x + width, y, x + width, y + height, 2f, GfxBuildOrder.ColorFront);
-            Renderer.DrawText("Prev", GfxBuildOrder.Font, GfxBuildOrder.ColorFront, x + 2, y + 3);
+            Renderer.DrawText("前一步", GfxBuildOrder.Font, GfxBuildOrder.ColorFront, x + 2, y + 3);
         }
     }
 
@@ -532,7 +532,7 @@ namespace AoE4BO
             int height = (int)Height;
 
             Renderer.DrawLine(x + width, y, x + width, y + height, 2f, GfxBuildOrder.ColorFront);
-            Renderer.DrawText("Next", GfxBuildOrder.Font, GfxBuildOrder.ColorFront, x + 2, y + 3);
+            Renderer.DrawText("下一步", GfxBuildOrder.Font, GfxBuildOrder.ColorFront, x + 2, y + 3);
         }
     }
 

@@ -1,41 +1,42 @@
-# AoE4BO
-Age of Empires 4 build order overlay for windows
+# 帝国4建造顺序助手
+Windows版帝国时代4建造顺序助手。
 
-## Introduction
-This tool will make it easier for you to learn build orders. The next steps of the build order are conveniently displayed in the game and update automatically according to the progress.
+## 介绍
+此工具将使您更容易了解建造顺序。建造顺序的后续步骤可以方便地显示在游戏中，并根据进度自动更新。
 
-## Installation
-Video instruction: https://www.youtube.com/watch?v=eDvuo8e2KRk  
+## 安装
+油管教程: https://www.youtube.com/watch?v=eDvuo8e2KRk  
+B站教程：https://www.bilibili.com/video/BV1Ei4y1Z7aD
 
-- Download latest release (https://github.com/nordie92/AoE4BO/releases)
-- Unzip
-- Execute "AoE4BO.exe" to start
+- 最新英文版 (https://github.com/nordie92/AoE4BO/releases)
+- 最新中文版 (https://github.com/EurekaChen/AoE4BO)
+- 解压缩
+- 运行 "AoE4BO.exe"开始
 
-## Usage
-- Execute "AoE4BO.exe"
-- Open a build order. There is a example build order "2-base-default.aoe4bo"
-- Start Match
+## 用法
+- 执行 "AoE4BO.exe"
+- 打开建造顺序，里面有个示例 "2-base-default.aoe4bo"
+- 开始比赛
 
-## Build orders
-Share your build order! https://steamcommunity.com/groups/Aoe4BO
+## 建造顺序
+分享你的建造顺序! https://steamcommunity.com/groups/Aoe4BO
 
 ## Create your own build order
-Create a text file and write down one line for every instruction.
-At first you have to define the requirements. For example "7s" (when reaches 7 supply). Or "7s,100f" (when reaches 7 supply and 100 food). Next close this requirement section by typing ":". Finally write down the instruction, "build house" for example.
-There are 7 possible requirements implemented: Supply(s), Supply cap(sc), food(f), wood(w), gold(g), stone(st) and time(t, in seconds). If you want to write more then one instruction just repeat the same requirements on the next line.
+创建一个文本文件，每个指令一行。
+首先，您必须定义需求。例如 "7s" (当有7个人口)。或者 "7s,100f" (当有7个人口和100粮食)。通过使用 ":"关闭需求部分，最后写下指引, 例如 "建造房屋"。
+这里有7种可能的需求: 人口(s), 人口容量(sc), 食物(f), 木材(w), 黄金(g), 石头(st) 和 时间(t, 按秒计)。如果想要写多条指示，只需要另写一行使用相同的需求。
 
 ### Example:  
-7s: When 7 Supply  
-20sc: When 20 SupplyCap  
-200f: When you reached 200 food  
-200w: When you reached 200 wood  
-200g: When you reached 200 gold  
-200st: When you reached 200 stone  
-2t: When 2 seconds pased
-400f,200g: Two requirements are possible too
+7s: 当7个人口  
+20sc: 当人口容量为20  
+200f: 当达到200食物  
+200w: 当达到200木头  
+200g: 当达到200黄金  
+200st: 当达到200石头  
+2t: 过了2秒钟
+400f,200g: 两个需求
 
-## Text recognition failed
-Text recognition (to parse supply and resources) will fail if your resolution isn't 1920x1080 or if you change the ui scale. But you can solve this issue by setting up position and size of depending on the resolutions. It can help to take a screenshot from your game and find out the position of supply and resources.
+## 文本识错误Text recognition failed
 
-## Feedback please
-I can only test the code on my one mashine. So i would be happy to receive feedback or error messages.
+如果分辨率不是1920x1080或更改用户界面比例，文本识别（解析人品和资源）就会失败。但您可以通过根据分辨率设置的位置和大小来解决此问题。它可以帮助你从游戏中截图，找出供应和资源的位置。
+

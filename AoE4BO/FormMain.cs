@@ -40,35 +40,35 @@ namespace AoE4BO
         {
             if (Global.BoState == BoState.Idle)
             {
-                lbState.Text = "Waiting for build order!";
+                lbState.Text = "等待建造顺序!";
                 lbState.ForeColor = Color.Black;
             }
             else if (Global.BoState == BoState.Running)
             {
                 if (Global.OCRState == OCRState.Success)
                 {
-                    lbState.Text = "Build order running!";
+                    lbState.Text = "建造顺序运行中!";
                     lbState.ForeColor = Color.Green;
                 }
                 else if (Global.OCRState == OCRState.Warning)
                 {
-                    lbState.Text = "Text recognition warning!";
+                    lbState.Text = "文本识别警告!";
                     lbState.ForeColor = Color.Orange;
                 }
                 else if (Global.OCRState == OCRState.Error)
                 {
-                    lbState.Text = "Text recognition error!";
+                    lbState.Text = "文本识别错误!";
                     lbState.ForeColor = Color.Red;
                 }
                 else
                 {
-                    lbState.Text = "Waiting for match";
+                    lbState.Text = "等待比赛";
                     lbState.ForeColor = Color.Green;
                 }
             }
             else if (Global.BoState == BoState.Finish)
             {
-                lbState.Text = "Build order finished!";
+                lbState.Text = "建造顺序完成!";
                 lbState.ForeColor = Color.Green;
             }
 
@@ -109,12 +109,12 @@ namespace AoE4BO
         private void btnOpenBO_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "AoE4BO Files|*.aoe4bo|All Files|*.*";
+            ofd.Filter = "帝国4建造顺序文件|*.aoe4bo|All Files|*.*";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 string buildOrderString = File.ReadAllText(ofd.FileName, Encoding.UTF8);
                 LoadBuildOrder(buildOrderString);
-                Text = "AoE4BO - " + ofd.SafeFileName;
+                Text = "帝国4建造顺序 - " + ofd.SafeFileName;
             }
         }
 
@@ -122,7 +122,7 @@ namespace AoE4BO
         {
             string buildOrderString = Clipboard.GetText();
             LoadBuildOrder(buildOrderString);
-            Text = "AoE4BO - unknown.aoe4bo";
+            Text = "帝国4建造顺序 - 未知.aoe4bo";
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

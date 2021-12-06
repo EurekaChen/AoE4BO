@@ -76,19 +76,19 @@ namespace AoE4BO
             List<string> requirements = new List<string>();
 
             if (SupplyRequired != -1)
-                requirements.Add(SupplyRequired + ";Supply");
+                requirements.Add(SupplyRequired + ";人口");
             if (SupplyCapRequired != -1)
-                requirements.Add(SupplyCapRequired + ";SupplyCap");
+                requirements.Add(SupplyCapRequired + ";人口容量");
             if (FoodRequired != -1)
-                requirements.Add(FoodRequired + ";Food");
+                requirements.Add(FoodRequired + ";食物");
             if (WoodRequired != -1)
-                requirements.Add(WoodRequired + ";Wood");
+                requirements.Add(WoodRequired + ";木材");
             if (GoldRequired != -1)
-                requirements.Add(GoldRequired + ";Gold");
+                requirements.Add(GoldRequired + ";黄金");
             if (StoneRequired != -1)
-                requirements.Add(StoneRequired + ";Stone");
+                requirements.Add(StoneRequired + ";石头");
             if (TimeRequired != -1)
-                requirements.Add(TimeRequired + ";Sec");
+                requirements.Add(TimeRequired + ";秒");
 
             return requirements;
         }

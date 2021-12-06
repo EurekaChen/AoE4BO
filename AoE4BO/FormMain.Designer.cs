@@ -41,23 +41,21 @@
             // lbState
             // 
             this.lbState.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbState.Location = new System.Drawing.Point(91, 185);
-            this.lbState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbState.Location = new System.Drawing.Point(136, 256);
             this.lbState.Name = "lbState";
-            this.lbState.Size = new System.Drawing.Size(197, 20);
+            this.lbState.Size = new System.Drawing.Size(296, 28);
             this.lbState.TabIndex = 14;
-            this.lbState.Text = "No build order selected...";
+            this.lbState.Text = "没有选择建造顺序...";
             this.lbState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnOpenBO
             // 
             this.btnOpenBO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnOpenBO.Location = new System.Drawing.Point(11, 208);
-            this.btnOpenBO.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOpenBO.Location = new System.Drawing.Point(16, 288);
             this.btnOpenBO.Name = "btnOpenBO";
-            this.btnOpenBO.Size = new System.Drawing.Size(87, 38);
+            this.btnOpenBO.Size = new System.Drawing.Size(130, 53);
             this.btnOpenBO.TabIndex = 7;
-            this.btnOpenBO.Text = "Open build order file";
+            this.btnOpenBO.Text = "打开建造顺序文件";
             this.btnOpenBO.UseVisualStyleBackColor = true;
             this.btnOpenBO.Click += new System.EventHandler(this.btnOpenBO_Click);
             // 
@@ -70,35 +68,34 @@
             // btnSettings
             // 
             this.btnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSettings.Location = new System.Drawing.Point(205, 208);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSettings.Location = new System.Drawing.Point(308, 288);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(83, 38);
+            this.btnSettings.Size = new System.Drawing.Size(124, 53);
             this.btnSettings.TabIndex = 7;
-            this.btnSettings.Text = "Settings";
+            this.btnSettings.Text = "设置";
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnBoFromClipboard
             // 
             this.btnBoFromClipboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnBoFromClipboard.Location = new System.Drawing.Point(102, 208);
-            this.btnBoFromClipboard.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBoFromClipboard.Location = new System.Drawing.Point(153, 288);
             this.btnBoFromClipboard.Name = "btnBoFromClipboard";
-            this.btnBoFromClipboard.Size = new System.Drawing.Size(99, 38);
+            this.btnBoFromClipboard.Size = new System.Drawing.Size(148, 53);
             this.btnBoFromClipboard.TabIndex = 7;
-            this.btnBoFromClipboard.Text = "Open build order from clipboard";
+            this.btnBoFromClipboard.Text = "从剪贴版打开建造顺序";
             this.btnBoFromClipboard.UseVisualStyleBackColor = true;
             this.btnBoFromClipboard.Click += new System.EventHandler(this.btnBoFromClipboard_Click);
             // 
             // btnRestartBO
             // 
             this.btnRestartBO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRestartBO.Location = new System.Drawing.Point(11, 184);
+            this.btnRestartBO.Location = new System.Drawing.Point(16, 255);
+            this.btnRestartBO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRestartBO.Name = "btnRestartBO";
-            this.btnRestartBO.Size = new System.Drawing.Size(69, 20);
+            this.btnRestartBO.Size = new System.Drawing.Size(104, 28);
             this.btnRestartBO.TabIndex = 16;
-            this.btnRestartBO.Text = "Restart BO";
+            this.btnRestartBO.Text = "重启助手";
             this.btnRestartBO.UseVisualStyleBackColor = true;
             this.btnRestartBO.Click += new System.EventHandler(this.btnRestartBO_Click);
             // 
@@ -110,30 +107,30 @@
             this.rtbBuildOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rtbBuildOrder.DetectUrls = false;
             this.rtbBuildOrder.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbBuildOrder.Location = new System.Drawing.Point(12, 12);
+            this.rtbBuildOrder.Location = new System.Drawing.Point(18, 17);
+            this.rtbBuildOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbBuildOrder.Name = "rtbBuildOrder";
             this.rtbBuildOrder.ReadOnly = true;
-            this.rtbBuildOrder.Size = new System.Drawing.Size(277, 167);
+            this.rtbBuildOrder.Size = new System.Drawing.Size(414, 230);
             this.rtbBuildOrder.TabIndex = 17;
             this.rtbBuildOrder.Text = "";
             this.rtbBuildOrder.WordWrap = false;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 257);
+            this.ClientSize = new System.Drawing.Size(452, 356);
             this.Controls.Add(this.rtbBuildOrder);
             this.Controls.Add(this.btnRestartBO);
             this.Controls.Add(this.lbState);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.btnBoFromClipboard);
             this.Controls.Add(this.btnOpenBO);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(317, 296);
+            this.MinimumSize = new System.Drawing.Size(464, 388);
             this.Name = "FormMain";
             this.ShowIcon = false;
-            this.Text = "AoE4 Build Order";
+            this.Text = "帝国时代4建造顺序";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
